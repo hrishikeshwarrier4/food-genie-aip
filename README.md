@@ -19,38 +19,38 @@ This project demonstrates an end-to-end **Palantir Foundry** workflow — from r
 │                         PALANTIR FOUNDRY PLATFORM                            │
 ├──────────────────────────────────────────────────────────────────────────────┤
 │                                                                              │
-│  📸 Camera Upload ──→ Media Set ──→ Object Monitor ──→ AIP Logic Trigger    │
+│  📸 Camera Upload ──→ Media Set ──→ Object Monitor ──→ AIP Logic Trigger     │
 │                                          │                                   │
 │                                          ▼                                   │
-│  ┌─────────────────────────────────────────────────────────────────┐        │
-│  │                    PIPELINE BUILDER                              │        │
-│  │  Media Set → LLM Classifier → Inventory Dataset                 │        │
-│  │  Manual Data → Roommates / Bio / Timetable Datasets             │        │
-│  └─────────────────────────────────────────────────────────────────┘        │
+│  ┌─────────────────────────────────────────────────────────────────┐         │
+│  │                    PIPELINE BUILDER                             │         │
+│  │  Media Set → LLM Classifier → Inventory Dataset                 │         │
+│  │  Manual Data → Roommates / Bio / Timetable Datasets             │         │
+│  └─────────────────────────────────────────────────────────────────┘         │
 │                                          │                                   │
 │                                          ▼                                   │
-│  ┌─────────────────────────────────────────────────────────────────┐        │
-│  │                      ONTOLOGY LAYER                              │        │
-│  │  Object Types: Inventory ←→ Roommates ←→ Bio ←→ TimeTable      │        │
-│  │  Link Types: userId-based relationships                         │        │
-│  │  Action Types: UpdateFood (Ontology Edit)                       │        │
-│  └─────────────────────────────────────────────────────────────────┘        │
+│  ┌─────────────────────────────────────────────────────────────────┐         │
+│  │                      ONTOLOGY LAYER                             │         │
+│  │  Object Types: Inventory ←→ Roommates ←→ Bio ←→ TimeTable       │         │
+│  │  Link Types: userId-based relationships                         │         │
+│  │  Action Types: UpdateFood (Ontology Edit)                       │         │
+│  └─────────────────────────────────────────────────────────────────┘         │
 │                                          │                                   │
 │                                          ▼                                   │
-│  ┌─────────────────────────────────────────────────────────────────┐        │
-│  │                   AIP LOGIC FUNCTIONS                            │        │
-│  │  🤖 Image Classifier (GPT-4o) — food identification             │        │
-│  │  💬 Chat (GPT-4o) — context-aware cooking assistant             │        │
-│  │  📊 Ingredients Info (GPT-4o) — nutrition & storage             │        │
-│  │  🍽️ Recipe Suggestions (GPT-4o) — personalized generation       │        │
-│  └─────────────────────────────────────────────────────────────────┘        │
+│  ┌─────────────────────────────────────────────────────────────────┐         │
+│  │                   AIP LOGIC FUNCTIONS                           │         │
+│  │  🤖 Image Classifier (GPT-4o) — food identification             │         │
+│  │  💬 Chat (GPT-4o) — context-aware cooking assistant             │         │
+│  │  📊 Ingredients Info (GPT-4o) — nutrition & storage             │         │
+│  │  🍽️ Recipe Suggestions (GPT-4o) — personalized generation       │         │
+│  └─────────────────────────────────────────────────────────────────┘         │
 │                                          │                                   │
-│                              ┌───────────┴───────────┐                      │
+│                              ┌───────────┴───────────┐                       │
 │                              ▼                       ▼                       │
-│                    ┌──────────────┐        ┌──────────────┐                 │
-│                    │  WORKSHOP    │        │  OSDK REACT  │                 │
-│                    │  (Low-Code)  │        │  (Pro-Code)  │                 │
-│                    └──────────────┘        └──────────────┘                 │
+│                    ┌──────────────┐        ┌──────────────┐                  │
+│                    │  WORKSHOP    │        │  OSDK REACT  │                  │ 
+│                    │  (Low-Code)  │        │  (Pro-Code)  │                  │
+│                    └──────────────┘        └──────────────┘                  │
 │                                                                              │
 └──────────────────────────────────────────────────────────────────────────────┘
 ```
